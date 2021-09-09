@@ -1,0 +1,13 @@
+p{
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 300%;
+     text-align: center;
+      color:rgb(5, 49, 14);
+}
+input[type=text]{
+    width: 52.5%;
+    padding: 12px, 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+}

@@ -1,0 +1,26 @@
+<p>INPUT DATA HERE!</p>
+<div class="container">
+    <form [formGroup]="inputData">
+      <label class="form-label" for="">Title:</label>
+      <input  type="text" class="form-control" formControlName="title"  placeholder="Enter Title">
+      <br>
+  
+      <div class="btn btn-primary">
+        Url Image
+        <input type="file" (change)="onImageSelected($event)" />
+      </div>
+      &nbsp;&nbsp;
+  
+      <div class="btn btn-primary">
+        Thumbnail Image
+        <input type="file" (change)="onThumbnailImageSelected($event)" />
+      </div>
+    </form>
+    <br><br>
+    <button class="btn btn-primary" type="submit" (click)="onUpload()">next
+    </button>
+    <!-- <button (click)="getDataFromAPI()">Get Data</button> -->
+      
+  </div>
+
+  

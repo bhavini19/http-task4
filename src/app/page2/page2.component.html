@@ -1,0 +1,38 @@
+ <p>TABLE!</p>
+
+ <div class= "container"> 
+    <table id="data">
+        <!-- let i =index; -->
+        <tr>
+            <th *ngFor = "let column of storeApi;let i=index">
+                title {{ i+1 }}: {{ column.title }}
+    
+            </th>
+        </tr>
+        <tr >
+            <td *ngFor ="let column of storeApi; let i=index">
+                " <img [src]="column.Image">
+                <p>ImageUrl{{ i+1 }}: {{ column.Image }}</p>"
+            </td>
+        </tr>
+        <tr >
+            <td *ngFor ="let column of storeApi; let i=index">
+                " <img [src]="column.ThumbnailImage">
+                <p>ThumbnailUrl {{ i+1 }}: {{ column.ThumbnailImage }}</p>"
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <div>
+        <button class="btn btn-info" (click)="next()">next</button>
+    </div>
+    </div>
+
+
+
+        <!-- "title0": "title {{ i+1 }}: {{ data.title }}",
+        "image0": " <img [src]="data.ThumbnailImage">
+        <p>ThumbnailUrl {{ i+1 }}: {{ data.ThumbnailImage }}</p>",
+        :thumbnailImage0": "<img [src]="data.ThumbnailImage">
+        <p>ThumbnailUrl {{ i+1 }}: {{ data.ThumbnailImage }}</p>" -->
+ 
