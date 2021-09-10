@@ -41,6 +41,9 @@ export class Page1Component implements OnInit {
     this.inputData=this.fb.group({
       fieldTitle: [''],
     })
+    this.inputData = new FormGroup({
+      'title': new FormControl('')
+  })
   }
 
 
